@@ -43,7 +43,7 @@ Fearology/
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/YOUR-USERNAME/Fearology.git
+   git clone https://github.com/Naman-ship/Fearology.git
    ```
 
 2. Open the project folder.
