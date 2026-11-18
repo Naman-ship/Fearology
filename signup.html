@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up | Fearology</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body class="auth">
+
+<header>
+    <nav>
+        <h2>
+            <a href="index.html">FEAROLOGY</a>
+        </h2>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="auth-page">
+
+    <section class="auth-card">
+
+        <p class="tag">JOIN THE INVESTIGATION</p>
+
+        <h1>CREATE ACCOUNT</h1>
+
+        <p class="auth-description">
+            Step into the unknown.
+            Become a part of the Fearology archive.
+        </p>
+
+        <form id="signupForm">
+
+            <div class="auth-group">
+                <label for="signupName">FULL NAME</label>
+
+                <input
+                    type="text"
+                    id="signupName"
+                    placeholder="Enter your name"
+                    required
+                >
+            </div>
+
+            <div class="auth-group">
+                <label for="signupEmail">EMAIL ADDRESS</label>
+
+                <input
+                    type="email"
+                    id="signupEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+            </div>
+
+            <div class="auth-group">
+                <label for="signupPassword">PASSWORD</label>
+
+                <div class="password-wrapper">
+                    <input
+                        type="password"
+                        id="signupPassword"
+                        placeholder="Create a password"
+                        minlength="8"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        class="toggle-password"
+                        data-target="signupPassword"
+                    >
+                        SHOW
+                    </button>
+                </div>
+            </div>
+
+            <div class="auth-group">
+                <label for="confirmPassword">CONFIRM PASSWORD</label>
+
+                <div class="password-wrapper">
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm your password"
+                        minlength="8"
+                        required
+                    >
+
+                    <button
+    type="button"
+    class="toggle-password"
+    data-target="loginPassword"
+    aria-label="Show password"
+    aria-pressed="false"
+>
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/>
+        <circle cx="12" cy="12" r="3"/>
+    </svg>
+</button>
+                </div>
+            </div>
+
+            <button type="submit" class="auth-button">
+                JOIN FEAROLOGY
+            </button>
+
+        </form>
+
+        <p class="auth-switch">
+            Already have an account?
+            <a href="login.html">Login here</a>
+        </p>
+
+        <a href="index.html" class="back-home">
+            ← RETURN TO HOME
+        </a>
+
+        <p class="auth-note">
+            FEAROLOGY INVESTIGATION ARCHIVE
+        </p>
+
+    </section>
+
+</main>
+
+<script src="auth.js"></script>
+
+</body>
+</html>
